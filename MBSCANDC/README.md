@@ -1,7 +1,7 @@
 # Elevating density functional theory to chemical accuracy for water simulations through a density-corrected many-body formalism
 ## Saswata Dasgupta, Eleftherios Lambros, John Perdew, Francesco Paesani
 ### ChemRxiv (2021)
-[![arXiv](http://img.shields.io/badge/arXiv-2004.08465-B31B1B.svg)](https://chemrxiv.org/engage/chemrxiv/article-details/615b42f90ad1ff19078a2c65)
+[![ChemRxiv](http://img.shields.io/badge/arXiv-2004.08465-B31B1B.svg)](https://chemrxiv.org/engage/chemrxiv/article-details/615b42f90ad1ff19078a2c65)
 
 This repository contains the raw data of the paper mentioned above.
 
