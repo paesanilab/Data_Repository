@@ -1,1 +1,16 @@
+Data Repository for: "Assessing the Interplay Between Functional-Driven and Density-Driven Errors in DFT Models of Water"
 
+Authors: Etienne Palos, Eleftherios Lambros, Steven Swee, Jie Hu, Saswata Dasgupta, Francesco Paesani.
+
+Contact: epalos (at) ucsd.edu ; elambros (at) ucsd.edu ; fpaesani (at) ucsd.edu
+
+Organization of Data: 
+
+Data pertaining to analyses performed on water clusters are uploaded as .xlsx files. 
+
+S1_Eint_BEGDB.xlsx.  Interaction Energies for (H2O)n, n=2-10 using the 38 clusters in the BEGDB data set. 
+S2A_ALMOEDA_kJ.xlsx ALMO-EDA data for E_pol, E_DF, E_disp and E_CT. In units of KJ/mol as delivered by Q-Chem. Contains Energies, Errors, Error per monomer.
+S2B_ALMOEDA_kcal.xlsx ALMO-EDA energies in units of kcal/mol for ease of use. 
+S3_MBE_Hex.xlsx     Many-Body Energies Analysis of the Water Hexamer. Contains 2B, 3B, 4B, 5B, 6B, and Total energies of the 8 low lying isomers of (H2O)6. 
+
+Data pertaining to the analyses of liquid water:
