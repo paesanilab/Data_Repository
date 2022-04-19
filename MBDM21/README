@@ -1,0 +1,8 @@
+Data for **"Density functional theory of water with the machine-learned DM21 functional"**
+*J. Chem. Phys. (in press) (2022); https://doi.org/10.1063/5.0090862*
+
+Interaction and binding energies for neutral, protonated and deprotonated water clusters obtained from the BEGDB and WATER27 data sets using DM21, DC-SCAN, and wB97M-V.
+
+Many-body contributions to the interaction energy of neutral-, protonated- and deprotonated- water clusters of different sizes. 
+
+Many-body molecular dynamics data using the MB-DM21 potential energy function. 
