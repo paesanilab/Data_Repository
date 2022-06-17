@@ -1,5 +1,5 @@
-# Elevating density functional theory to chemical accuracy for water simulations through a density-corrected many-body formalism
-## Saswata Dasgupta, Eleftherios Lambros, John Perdew and Francesco Paesani
+# How Good is the Density-Corrected SCAN Functional for Neutral and Ionic Aqueous Systems, and What is so Right about the Hartree-Fock Density?
+## Saswata Dasgupta, Chandra Shahi, Pradeep Bhetwal, John P Perdew and Francesco Paesani
 ### ChemRxiv (2021)
 [![ChemRxiv](https://img.shields.io/badge/ChemRxiv-10.33774-red)](https://chemrxiv.org/engage/chemrxiv/article-details/62468f9358f7af2f0eae6081)
 
