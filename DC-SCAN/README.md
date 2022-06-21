@@ -10,4 +10,3 @@ Brief summary of the contents of each folder:
 * ```basis_and_grid_conv``` : All the raw data regarding basis-sets and grids' convergence.
 * ```mbd_ions``` : All the raw output of Many-body decomposition analysis.
 * ```distortion``` : All the raw data regarding the distortion of water monomer.
-Please e-mail if you have trouble reproducing the results.
