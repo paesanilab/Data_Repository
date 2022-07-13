@@ -1,8 +1,11 @@
-Data for **"Density functional theory of water with the machine-learned DM21 functional"**
-*J. Chem. Phys. (in press) (2022); https://doi.org/10.1063/5.0090862 *
+# Elevating density functional theory to chemical accuracy for water simulations through a density-corrected many-body formalism
+## Saswata Dasgupta, Eleftherios Lambros, John Perdew and Francesco Paesani
+### ChemRxiv (2021)
+[![ChemRxiv](https://img.shields.io/badge/ChemRxiv-10.33774-red)](https://chemrxiv.org/engage/chemrxiv/article-details/615b42f90ad1ff19078a2c65)
 
-Interaction and binding energies for neutral, protonated and deprotonated water clusters obtained from the BEGDB and WATER27 data sets using DM21, DC-SCAN, and wB97M-V.
+This repository contains the raw data of the paper mentioned above.
 
-Many-body contributions to the interaction energy of neutral-, protonated- and deprotonated- water clusters of different sizes. 
-
-Many-body molecular dynamics data using the MB-DM21 potential energy function. 
+Brief summary of the contents of each folder:
+* ```QM_analysis``` : All the results obtained from the SCAN, DC-SCAN and other electronic structure methods mentioned in the paper.
+* ```Simulations``` : All the raw output of the MB-MD simulations using MB-SCAN(DC)
+Please e-mail if you have trouble reproducing the results.
