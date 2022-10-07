@@ -1,10 +1,10 @@
 # Training Sets
 
-- chloride\_v1.0.......(https://doi.org/10.1063/5.0059445)
+- chloride\_v1.0 (https://doi.org/10.1063/5.0059445)
 - fluoride\_v1.0
 - chloride\_v2.0
-- bromide\_v1.0........(https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
-- iodide\_v1.0.........(https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
+- bromide\_v1.0 (https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
+- iodide\_v1.0 (https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
 
 ## chloride\_v1.0
 ### 2-body
