@@ -14,4 +14,4 @@ lmp_nve_mbpol: the LAMMPS input file for running microcanonical ensemble MD simu
 
 Remark:
 
-It should be noted that DLPOLY_2 and LAMMPS have different conventions of the same functional forms. 
+It should be noted that DLPOLY_2 and LAMMPS have different conventions of the same functional forms. As a result, the force field parameters documented in the Supporting Information are converted to align LAMMPS convention in LAMMPS input files.
