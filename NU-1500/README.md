@@ -12,6 +12,10 @@ lmp_npt_mbpol: the LAMMPS input file for running isothermal-isobaric ensemble MD
 
 lmp_nve_mbpol: the LAMMPS input file for running microcanonical ensemble MD simulations with MB-pol.
 
+CONFIG.01: the DLPOLY2 input file for the initial configuration of the NU-1500-Cr loaded with 512 additional water molecules.
+
+FINAL_CONFIG.01: the DLPOLY2 output file for the last configuration of NU-1500-Cr loaded with 512 additional water molecules after randomization and full 1 ns NPT run.
+
 Remark:
 
 It should be noted that DLPOLY_2 and LAMMPS have different conventions of the same functional forms. As a result, the force field parameters documented in the Supporting Information are converted to align LAMMPS convention in LAMMPS input files.
