@@ -1,5 +1,5 @@
 # Towards Correcting Delocalization Errors in DFT for Many-Body Representations of Ion Hydration
-## Etienne Palos, Alessandro Caruso and Francesco Paesani
+## Etienne Palos*, Alessandro Caruso* and Francesco Paesani
 ### ChemRxiv (2023)
 [![ChemRxiv](https://img.shields.io/badge/ChemRxiv-10.33774-red)](https://chemrxiv.org/)
 
