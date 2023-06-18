@@ -1,4 +1,4 @@
-# Realistic phase diagram of water from "first principles" data-driven quantum simulations.
+# Realistic phase diagram of water from "first principles" data-driven quantum simulations
 ## Nat. Commun. 14, 3349 (2023)
 ## Sigbjørn L. Bore and Francesco Paesani
 
