@@ -9,4 +9,5 @@ Brief summary of the contents of each folder:
 * ```S66x8``` : All the raw data regarding interaction energies, dispersion correction and ALMO-EDA energy components.
 * ```Benzene dimer``` : All the raw data regarding the interaction energies and ALMO-EDA of benzene dimers.
 * ```Charged systems``` : All the raw data regarding the interaction energies and ALMO-EDA of IL16, CHB6 and AHB21 datasets.
+* ```Aqueous systems``` : All the raw data regarding the DLPNO-CCSD(T) interaction energies and ALMO-EDA of BEGDB water clusters, and the MB-nrg derived sodium--water, chloride--water aqueous ion datasets.
 * ```X23``` : All the raw data regarding the lattice energies and cell volumes of X23 dataset.
