@@ -5,6 +5,8 @@ empty_mof.system: the 1x1x1 MOF-808 framework.
 
 5RH.system: the 1x1x1 framework with H2O loaded according to experimental isotherm at 5% RH.
 
+5RH_data.system: LAMMPS data.system file of MOF-808 loaded according to experimental isotherm at 5% RH.
+
 lmp_npt_mbpol: LAMMPS input file for running isothermal-isobaric ensemble MD with MB-pol.
 
 lmp_nvt_mbpol: LAMMPS input file for running canonical ensemble MD with MB-pol.
