@@ -1,0 +1,16 @@
+#RESTART
+
+UNITS LENGTH=A ENERGY=kcal/mol TIME=ps
+
+COM ATOMS=253,231 label=channel #defines the y0 where any argument>0 in the larger pore, <= in the smaller pore
+COM ATOMS=167,173 label=cp 
+COM ATOMS=1245,1246,1247 label=cw # center of water
+
+PROJECTION_ON_AXIS AXIS_ATOMS=channel,cp ATOM=cw label=p
+
+RESTRAINT ARG=p.proj AT=_AT_ KAPPA=50.0 LABEL=usrestraint
+RESTRAINT ARG=p.ext AT=0.0 KAPPA=500.0 LABEL=restraint
+
+PRINT STRIDE=100 ARG=p.proj,p.ext FILE=COLVAR
+
+FLUSH STRIDE=1
