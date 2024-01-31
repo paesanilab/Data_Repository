@@ -13,8 +13,8 @@ units		real
 atom_style	full
 boundary        p p p
 
-#read_data	data.system
-read_restart    lmp.restart
+read_data	data.system
+#read_restart    lmp.restart
 
 group mof type 1 2 3 4 5 6 7 8 9 10 11
 group h2o type 12 13
