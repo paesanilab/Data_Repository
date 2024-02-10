@@ -3,4 +3,5 @@
 
 This reposiroy contains the potentials associated with the analyses presented in the paper.
 They are in the DeepMD format for LAMMPs.
-:D
+
+The DNN@MB-pol potential is lcoated in the original repository: https://github.com/paesanilab/Data_Repository/tree/main/Quantum-phase-diagram-of-water/Deep_Neural_Network_Potential
