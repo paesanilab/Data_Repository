@@ -87,8 +87,9 @@ dihedral_coeff   26         3.6250        -1         2 # c-ca-ca-ha
 dihedral_coeff   27         3.6250        -1         2 # ca-ca-ca-ca
 dihedral_coeff   28         3.6250        -1         2 # ca-ca-ca-ha
 dihedral_coeff   29         1.0000        -1         2 # o1-c-ca-ca
-improper_coeff    1    1.1000        -1         2 # c-ca-ca-ca
-improper_coeff    2    1.1000        -1         2 # ca-ca-ca-ha
+improper_coeff    1    1.1000        -1         2 # ca-c-o1-o1
+improper_coeff    2    1.1000        -1         2 # c-ca-ca-ca
+improper_coeff    3    1.1000        -1         2 # ca-ca-ca-ha
 
 ## H2O ##
 #set             type 3 charge -1.1128
