@@ -1,0 +1,70 @@
+bond_coeff      1      75.5145315        2.427973 # Zr  o1
+bond_coeff      2      75.5145315        2.427973 # Zr  o2
+bond_coeff      3      75.0071765        2.327502 # Zr  oh
+bond_coeff      4       76.085807        2.328376 # Zr  o
+bond_coeff      5           371.4      0.97300000 # oh  ho
+bond_coeff      6           345.9      1.49100000 # c  ca
+bond_coeff      7           319.7      1.10500000 # c2  h
+bond_coeff      8           637.5      1.21800000 # c  o1
+bond_coeff      9           637.5      1.21800000 # c2  o2
+bond_coeff     10           461.1      1.39800000 # ca  ca
+bond_coeff     11           345.8      1.08600000 # ca  ha
+angle_coeff    1     50.6472595     123.423885 # Zr-o1-c
+angle_coeff    2     50.6472595     123.423885 # Zr-o2-c2
+angle_coeff    3     63.8510835      95.231331 # Zr-oh-ho
+angle_coeff    4      56.349093     109.516511 # Zr-oh-Zr
+angle_coeff    5     51.5985505      93.903706 # Zr-o-Zr
+angle_coeff    6     52.4038815      67.064993 # o1-Zr-o1
+angle_coeff    7     52.4038815      67.064993 # o2-Zr-o2
+angle_coeff    8     52.4038815      67.064993 # o1-Zr-o2
+angle_coeff    9     53.9239445     115.332880 # o1-Zr-o2
+angle_coeff   10       53.26567      67.286309 # o1-Zr-o
+angle_coeff   11     51.6618745     134.721336 # o1-Zr-o
+angle_coeff   12       53.26567      67.286309 # o2-Zr-o
+angle_coeff   13     51.6618745     134.721336 # o2-Zr-o
+angle_coeff   14     50.6234175      74.981579 # o1-Zr-oh
+angle_coeff   15     50.1015185     130.035024 # o1-Zr-oh
+angle_coeff   16     50.6234175      74.981579 # o2-Zr-oh
+angle_coeff   17     50.1015185     130.035024 # o2-Zr-oh
+angle_coeff   18     50.0836375      57.325756 # o-Zr-oh
+angle_coeff   19     50.4097465      92.912620 # oh-Zr-oh
+angle_coeff   20      51.591255     102.024026 # o-Zr-o
+angle_coeff   21           64.3     120.300000 # c-ca-ca
+angle_coeff   22           68.7     122.600000 # ca-c-o1
+angle_coeff   23           53.7     123.650000 # h-c2-o2
+angle_coeff   24           66.6     120.000000 # ca-ca-ca
+angle_coeff   25           48.2     119.900000 # ca-ca-ha
+angle_coeff   26           77.9     130.200000 # o1-c-o1
+angle_coeff   27           77.9     130.250000 # o2-c2-o2
+dihedral_coeff    1         0.0000         1         2 # Zr-o2-c2-h
+dihedral_coeff    2         0.0000         1         2 # Zr-o1-c-ca
+dihedral_coeff    3         0.0000         1         2 # Zr-o1-c-o1
+dihedral_coeff    4         0.0000         1         2 # Zr-o2-c2-o2
+dihedral_coeff    5         0.0000         1         2 # Zr-o-Zr-oh
+dihedral_coeff    6         0.0000         1         2 # Zr-o-Zr-o
+dihedral_coeff    7         0.0000         1         2 # Zr-oh-Zr-o
+dihedral_coeff    8         0.0000         1         2 # Zr-oh-Zr-oh
+dihedral_coeff    9         0.0000         1         2 # o1-Zr-o1-c
+dihedral_coeff   10         0.0000         1         2 # o1-Zr-o2-c2
+dihedral_coeff   11         0.0000         1         2 # o1-Zr-oh-ho
+dihedral_coeff   12         0.0000         1         2 # o2-Zr-o2-c2
+dihedral_coeff   13         0.0000         1         2 # o2-Zr-o1-c
+dihedral_coeff   14         0.0000         1         2 # o2-Zr-oh-ho
+dihedral_coeff   15         0.0000         1         2 # o1-Zr-o-Zr
+dihedral_coeff   16         0.0000         1         2 # o2-Zr-o-Zr
+dihedral_coeff   17         0.0000         1         2 # o1-Zr-oh-Zr
+dihedral_coeff   18         0.0000         1         2 # o2-Zr-oh-Zr
+dihedral_coeff   19         0.0000         1         2 # o-Zr-oh-ho
+dihedral_coeff   20         0.0000         1         2 # oh-Zr-oh-ho
+dihedral_coeff   21         0.0000         1         2 # o-Zr-o1-c
+dihedral_coeff   22         0.0000         1         2 # o-Zr-o2-c2
+dihedral_coeff   23         0.0000         1         2 # oh-Zr-o1-c
+dihedral_coeff   24         0.0000         1         2 # oh-Zr-o2-c2
+dihedral_coeff   25         3.6250        -1         2 # c-ca-ca-ca
+dihedral_coeff   26         3.6250        -1         2 # c-ca-ca-ha
+dihedral_coeff   27         3.6250        -1         2 # ca-ca-ca-ca
+dihedral_coeff   28         3.6250        -1         2 # ca-ca-ca-ha
+dihedral_coeff   29         1.0000        -1         2 # o1-c-ca-ca
+improper_coeff    1    1.1000        -1         2 # ca-c-o1-o1
+improper_coeff    2    1.1000        -1         2 # c-ca-ca-ca
+improper_coeff    3    1.1000        -1         2 # ca-ca-ca-ha
