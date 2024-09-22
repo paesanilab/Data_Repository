@@ -17,6 +17,8 @@ lmp_umbrella_sample: LAMMPS input file for running umbrella sampling MD simulati
 
 plumed.dat: PLUMED input file for running umbrella sampling MD simulations.
 
+MOF-808_coefficients: MOF-808 force field parameters.
+
 CONFIG.01: the DL_POLY_2 input file for the initial configuration of MOF-808 at 5% RH.
 
 FINAL_CONFIG.01: the DL_POLY_2 output file for the last configuration of the MOF-808 loaded at 5% RH after randomization and full 1 ns NPT run.
