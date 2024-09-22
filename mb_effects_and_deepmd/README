@@ -1,0 +1,8 @@
+# Many-body Interactions and Deep Neural Network Potentials for Water
+
+## Authors
+Yaoguang Zhai, Richa Rashmi, Etienne Palos, and Francesco Paesani
+
+This repository contains the potentials associated with the analyses presented in the paper. They are in the DeepMD format for LAMMPS.
+
+The DNN@MB-pol potential is located in the [original repository](https://github.com/paesanilab/Data_Repository/tree/main/Quantum-phase-diagram-of-water/Deep_Neural_Network_Potential).

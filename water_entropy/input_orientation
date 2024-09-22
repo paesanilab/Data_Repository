@@ -1,0 +1,16 @@
+&input
+
+Ntime  = 12500     ! number of steps: 1 ns = 2000000 / Nstep steps 
+tstep = 0.0002
+Nstep = 20
+Nmof = 2016        ! number of MOF atoms
+Nwat   = 400           ! number of water molecules
+Natom  = 3 
+Nprint = 12500      ! number of steps printed
+Nskip  = 1
+Nlimit = 12500      ! number of steps used in the correlation functions
+iwat_in = 1
+iwat_fin = 400  
+
+/
+

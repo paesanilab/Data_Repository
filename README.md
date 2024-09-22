@@ -9,3 +9,5 @@
 5. Chloride v1 [J. Chem. Phys. 155, 064502 (2021)] (https://doi.org/10.1063/5.0059445)
 6. Bromide & Iodide [ChemRxiv] (https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
 7. Quantum phase diagram of water [ChemRxiv] (https://doi.org/10.26434/chemrxiv-2023-kmmmz)
+8. Predictability vs Interpretability of Dispersion-Corrected DFT [J. Chem. Theory Comput. 20, 49 (2024)] (https://doi.org/10.1021/acs.jctc.3c00903)
+9. Many-body interactions and DeePMD potentials for water [ChemRxiv (2024)] ()
