@@ -6,6 +6,18 @@
 - bromide\_v1.0 (https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
 - iodide\_v1.0 (https://doi.org/10.26434/chemrxiv-2022-p39gk-v2)
 
+## Number of Configurations
+| Halide | 2-body Train | 2-body Test | 2-body cutoff | 3-body Train | 3-body Test | 3-body cutoff |
+|--------|--------------|-------------|---------------|--------------|-------------|---------------|
+| fluoride | 19956 | 2096 | 7.3 | 30767 | 3242 | 5.8 |
+| ~~chloride\_v1.0~~ | ~~4760~~ | ~~407~~ | ~~7.8~~ | ~~13140~~ | ~~1240~~ | ~~4.5~~ |
+| chloride\_v2.0 | 17143 | 1797 | 7.8 | 35123 | 3698 | 5.8 |
+| bromide | 17057 | 1795 | 7.9 | 33830 | 3576 | 5.9 |
+| iodide | 15810 | 1668 | 8.2 | 33985 | 3621 | 6.0 |
+
+
+
+
 ## chloride\_v1.0
 ### 2-body
 Training set size:   4760
@@ -80,4 +92,3 @@ Training set size:  33985
 Test set size:       3621
 
 Cutoff: 6.0 Angstrom
-
