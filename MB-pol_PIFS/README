@@ -1,0 +1,2 @@
+To use MB-pol(PIFS), use water monomer name as "h2o_mb" (in LAMMPS fix)
+Monomer name as "h2o" in this copy is the (original) MB-pol.
