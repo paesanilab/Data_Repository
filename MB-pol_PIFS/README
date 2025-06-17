@@ -1,2 +1,23 @@
+---
+MBX_PIFS_CMAKE.tar.gz contains MBX for MB-pol(PIFS).
 To use MB-pol(PIFS), use water monomer name as "h2o_mb" (in LAMMPS fix)
 Monomer name as "h2o" in this copy is the (original) MB-pol.
+
+--- 
+MB-Fit_PIFS.tar.gz contains a modified MB-Fit software used to generate PIFS. The original (unmodified) MB-fit is available and documented at https://github.com/paesanilab/MB-Fit.
+
+To generate PIFS, instead of using
+     mbfit.generate_polynomials(dim_settings, poly_in, polynomial_order, poly_directory, generate_direct_gradients=True)
+use
+     mbfit.generate_polynomials(dim_settings, poly_in, polynomial_order, poly_directory, generate_direct_gradients=True, poly_version=2)
+
+---
+In poly-filters/ :
+  > `poly_in` (python string: path to "poly.in") used to generate the PEFs can be found in this folder.
+
+---
+In training_sets/ :
+MB-pol(PIFS) is trained on filtered/2b/2b_data.xyz original/3b/3b_data.xyz
+PEF/A1 is trained on filtered/2b/2b_data.xyz filtered/3b/3b_data.xyz
+PEF/A2 is trained on filtered/2b/2b_data.xyz original/3b/3b_data.xyz
+PEF/A3 is trained on original/2b/2b_data.xyz filtered/3b/3b_data.xyz
