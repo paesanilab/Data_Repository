@@ -12,3 +12,4 @@
 8. Quantum phase diagram of water [Nat. Commun. 14, 3349 (2023)] (https://doi.org/10.1038/s41467-023-38855-1)
 9. Predictability vs Interpretability of Dispersion-Corrected DFT [J. Chem. Theory Comput. 20, 49 (2024)] (https://doi.org/10.1021/acs.jctc.3c00903)
 10. Many-body interactions and DeePMD potentials for water [ChemRxiv (2024)] ()
+11. Sub-Nanometer Confinement Suppresses Autoionization of Water: [https://doi.org/10.26434/chemrxiv-2025-vtwpr](https://doi.org/10.26434/chemrxiv-2025-vtwpr)
