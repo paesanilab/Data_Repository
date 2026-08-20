@@ -1,0 +1,144 @@
+# ============================================================
+# Sample LAMMPS input for CCD-NEMD simulation of SU-102
+#
+# This sample starts from a pre-equilibrated SU-102 structure
+# containing Li+ ions and propylene carbonate (PC).
+#
+# A spatially uniform color field is applied along the z
+# direction. Li+ ions are assigned a color charge of +1,
+# while an equal and opposite color charge is distributed
+# over the negatively charged SU-102 framework. PC molecules
+# have zero color charge and therefore do not couple directly
+# to the applied color field.
+#
+# The x and y velocity components are thermostatted at 300 K,
+# while the z component, along which the external field is
+# applied, is excluded from the thermostat.
+# ============================================================
+
+
+# ----------------------------
+# Basic settings
+# ----------------------------
+units           real
+atom_style      full
+boundary        p p p
+box tilt        large
+
+variable dt          equal 1.0 # time step 1fs
+timestep ${dt}
+
+
+# ----------------------------
+# Force field styles
+# ----------------------------
+pair_style      lj/cut/coul/long 10.0
+bond_style      hybrid harmonic morse
+angle_style     hybrid cosine/periodic fourier harmonic
+dihedral_style  hybrid harmonic opls
+improper_style  fourier
+kspace_style    ewald 0.000001
+
+pair_modify     tail yes mix arithmetic
+dielectric      1.0
+special_bonds   lj/coul 0.0 0.0 1.0
+
+
+# ----------------------------
+# Read equilibrated initial structure
+# ----------------------------
+read_data initial_structure.data
+
+
+# ----------------------------
+# Force-field parameters
+# ----------------------------
+include para.in
+include pot_file.param
+include         li.param
+
+molecule        li     li.mol
+molecule        pc     pc.mol
+
+
+# ----------------------------
+# Atom groups
+# ----------------------------
+group           mof type 1:7
+group           pc type 9:16
+group           li type 8
+
+
+# ----------------------------
+# CCD-NEMD field parameters
+# ----------------------------
+# Applied color-field strength in V/Angstrom
+# Change the sign of Efield to perform the corresponding
+# simulation under the opposite field direction.
+
+variable Efield index 0.01
+
+# Random seed used to generate the initial velocities.
+variable        seed index 123450
+
+# Dimensionless color charges
+variable qcolor_li     equal 1.0
+variable qcolor_mof    equal -2.0/51.0
+
+# Conversion from eV to kcal/mol
+variable eV_to_real    equal 23.06054783
+
+# External force:
+# F_ext = c_i * E * (eV-to-kcal/mol conversion)
+
+variable F_li_z        equal v_qcolor_li*v_Efield*v_eV_to_real
+variable F_mof_z       equal v_qcolor_mof*v_Efield*v_eV_to_real
+
+print "CCD-NEMD field strength = ${Efield} V/Angstrom"
+print "Li color charge         = $(v_qcolor_li)"
+print "MOF atom color charge   = $(v_qcolor_mof)"
+print "Li added z force        = $(v_F_li_z) kcal/(mol Angstrom)"
+print "MOF added z force       = $(v_F_mof_z) kcal/(mol Angstrom)"
+
+
+# ----------------------------
+# Initial velocities and constraints
+# ----------------------------
+velocity        all create 300.0 ${seed} dist uniform
+fix             shakeH all shake 0.0001 20 1000 b 15
+
+
+# ----------------------------
+# Thermodynamic output
+# ----------------------------
+thermo_style custom step etotal pe cella cellb cellc evdwl ecoul elong temp press density vol
+thermo               10
+fix             THERMO all print 5000 "$(step) $(time) $(temp) $(density) $(cella) $(cellb) $(cellc) $(cellalpha) $(cellbeta) $(cellgamma) $(press) $(xlo) $(xhi) $(ylo) $(yhi) $(zlo) $(zhi) $(xy) $(xz) $(yz) $(vol)" file thermo.dat &
+                                screen no title "#step time temp density cella cellb cellc press xlo xhiylo yhi zlo zhi xy xz yz vol"
+
+
+# ============================================================
+# CCD-NEMD production simulation
+# ============================================================
+# Thermostat only the degrees of freedom perpendicular to applied field
+compute         Txy all temp/partial 1 1 0
+
+fix             NVT all nvt temp 300 300 50.0 tchain 3
+fix_modify      NVT temp Txy
+
+# Apply the color-field forces along zhi
+fix             field_li li addforce 0.0 0.0 v_F_li_z
+fix             field_mof mof addforce 0.0 0.0 v_F_mof_z
+
+dump            traj all custom 100 trajectory.lammpstrj id type xu yu zu vx vy vz
+dump_modify     traj sort id
+run             300000  #run 300ps with 1 fs timstep
+undump          traj
+unfix           NVT
+
+
+# ----------------------------
+# Final structure
+# ----------------------------
+write_restart   final_structure.restart
+write_data      final_structure.data pair ij

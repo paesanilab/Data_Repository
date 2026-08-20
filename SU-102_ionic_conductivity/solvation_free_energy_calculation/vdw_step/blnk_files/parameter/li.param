@@ -1,0 +1,4 @@
+mass   8   6.941  # Li
+pair_coeff    8  8        0.025000        2.183593 1.0 # Li Li
+mass   17   6.941  # Li
+pair_coeff    17  17        0.025000        2.183593 1.0 # Li Li

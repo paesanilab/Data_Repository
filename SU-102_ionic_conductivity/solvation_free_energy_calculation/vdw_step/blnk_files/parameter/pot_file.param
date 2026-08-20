@@ -1,0 +1,40 @@
+# Potential for the system
+mass   9   12.011  # COC
+mass   10   15.999  # OCC
+mass   11   15.999  # OSC
+mass   12   12.011  # C1C
+mass   13   12.011  # C2C
+mass   14   12.011  # C3C
+mass   15    1.00794  # HCC
+mass   16    1.00794  # HC
+bond_coeff   11 harmonic  570.004780     1.229000  # C_2-O_2
+bond_coeff   12 harmonic  214.005736     1.370000  # C_2-OS
+bond_coeff   13 harmonic  320.004780     1.410000  # CT-OS
+bond_coeff   14 harmonic  267.999522     1.529000  # CT-CT
+bond_coeff   15 harmonic  340.000000     1.090000  # CT-HC
+angle_coeff   11 harmonic   82.994742   125.600000  # O_2-C_2-OS
+angle_coeff   12 harmonic   82.994742   108.800000  # OS-C_2-OS
+angle_coeff   13 harmonic   82.994742   116.900000  # CT-OS-C_2
+angle_coeff   14 harmonic   50.000000   109.500000  # CT-CT-OS
+angle_coeff   15 harmonic   35.002390   109.500000  # HC-CT-OS
+angle_coeff   16 harmonic   58.350024   112.700000  # CT-CT-CT
+angle_coeff   17 harmonic   37.500000   110.700000  # HC-CT-CT
+angle_coeff   18 harmonic   33.000000   107.800000  # HC-CT-HC
+dihedral_coeff   13 opls     0.000000     5.000000     0.000000     0.000000  # CT-OS-C_2-O_2
+dihedral_coeff   14 opls     0.000000     5.000000     0.000000     0.000000  # CT-OS-C_2-OS
+dihedral_coeff   15 opls    -1.220005    -0.126004     0.422012     0.000000  # CT-CT-OS-C_2
+dihedral_coeff   16 opls    -0.000000     0.000000     0.197992     0.000000  # HC-CT-OS-C_2
+dihedral_coeff   17 opls    -0.550000     0.000000     0.000000     0.000000  # OS-CT-CT-OS
+dihedral_coeff   18 opls     0.000000     0.000000     0.467997     0.000000  # HC-CT-CT-OS
+dihedral_coeff   19 opls     1.710994    -0.500000     0.663002     0.000000  # CT-CT-CT-OS
+dihedral_coeff   20 opls     0.000000     0.000000     0.300000     0.000000  # HC-CT-CT-CT
+dihedral_coeff   21 opls     0.000000     0.000000     0.300000     0.000000  # HC-CT-CT-HC
+improper_coeff   7     0.000000    21.000000     0.000000     0.000000  # OS-OS-C_2-O_2
+pair_coeff 9 9 0.105 3.75 1.0 # COC COC 
+pair_coeff 10 10 0.21 2.96 1.0 # OCC OCC 
+pair_coeff 11 11 0.17 3.0 1.0 # OSC OSC 
+pair_coeff 12 12 0.06599904397705544 3.5 1.0 # C1C C1C 
+pair_coeff 13 13 0.06599904397705544 3.5 1.0 # C2C C2C 
+pair_coeff 14 14 0.06599904397705544 3.5 1.0 # C3C C3C 
+pair_coeff 15 15 0.014999999999999998 2.42 1.0 # HCC HCC 
+pair_coeff 16 16 0.029999999999999995 2.5 1.0 # HC HC 

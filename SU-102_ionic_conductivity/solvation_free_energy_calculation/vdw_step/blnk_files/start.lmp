@@ -1,0 +1,148 @@
+# ============================================================
+# Sample LAMMPS input for the van der Waals (vdW) step of
+# Finite Difference Thermodynamic Integration (FDTI)
+#
+# In this step, the Lennard-Jones interaction of the selected
+# ion is controlled by the coupling parameter lambda, while
+# its electrostatic interaction is turned off.
+#
+# The initial structure should be prepared and equilibrated
+# before running this calculation.
+# ============================================================
+
+# ----------------------------
+# Simulation variables
+# ----------------------------
+variable nsteps       equal 550000
+variable temp         equal 300.0
+variable pressure     equal 1.0
+variable dt           equal 1.0
+
+variable thermo_freq  equal 100
+variable dump_freq    equal 500
+variable print_freq   equal 10
+
+# Random seed for initial velocities
+variable seed         equal 1001001
+
+# Atom type and full charge of the Li+ ion used for the solvation free-energy calculation.
+# The Li+ ion whose solvation free energy is being calculated
+# should be assigned a unique atom type (type 17 in this sample)
+# so that its interactions can be modified independently.
+variable ion_type     equal 17
+variable ion_charge   equal 0.8
+
+# Coupling parameter for the current FEP/TI window
+# Replace this value for each lambda window
+variable lambda       equal _REPLACE_LAMBDA_
+variable dlambda      equal 0.002
+
+
+# ----------------------------
+# Basic settings
+# ----------------------------
+processors      * * * map xyz
+
+units           real
+atom_style      full
+boundary        p p p
+box             tilt large
+
+timestep        ${dt}
+
+
+# ----------------------------
+# Force-field styles
+# ----------------------------
+bond_style      hybrid harmonic morse
+angle_style     hybrid cosine/periodic fourier harmonic
+dihedral_style  hybrid harmonic opls
+improper_style  fourier
+
+pair_style      lj/cut/coul/long/soft 1 0.5 10.0 10.0
+pair_modify     tail yes mix arithmetic
+
+kspace_style    ewald 1.0e-6
+special_bonds   lj/coul 0.0 0.0 1.0
+
+neighbor        2.0 bin
+neigh_modify    every 1 delay 1 check yes
+
+
+# ----------------------------
+# Read initial structure
+# ----------------------------
+read_data       initial_structure.data
+
+# ----------------------------
+# Force-field parameters
+# ----------------------------
+include         parameter/para.in
+include         parameter/pot_file.param
+include         parameter/li.param
+
+
+# ----------------------------
+# vdW coupling
+# ----------------------------
+# Electrostatic interactions of the selected ion are turned off during the vdW coupling step.
+variable q      equal ${ion_charge}*0.0
+variable dq     equal ${ion_charge}*v_dlambda
+
+# Scale the Lennard-Jones interaction of the selected ion according to lambda.
+fix ADAPT all adapt/fep 0 &
+    pair lj/cut/coul/long/soft lambda 1*16 ${ion_type} v_lambda &
+    atom charge ${ion_type} v_q &
+    after yes
+
+# Calculate the free-energy derivative for the vdW perturbation.
+compute FDTI all fep ${temp} &
+    pair lj/cut/coul/long/soft lambda 1*16 ${ion_type} v_dlambda &
+    volume no
+
+
+# ----------------------------
+# Output
+# ----------------------------
+fix             PRINT all print ${print_freq} "$(step) $(c_FDTI[1]) $(c_FDTI[2]) $(c_FDTI[3]) $(v_lambda:%.3f)" file ../data/fdti${lambda}.dat &
+                screen no title "#step FDTI[1] FDTI[2] FDTI[3] lambda"
+
+dump TRAJ all custom ${dump_freq} trajectory.lammpstrj &
+    id type xu yu zu vx vy vz
+
+restart 500 restart1.lmp restart2.lmp
+
+thermo_style custom step etotal pe evdwl ecoul elong temp press density v_lambda
+thermo ${thermo_freq}
+thermo_modify flush yes
+
+fix NRG all print ${thermo_freq} &
+    "$(step) $(pe) $(ke) $(etotal) $(evdwl) $(ecoul) $(elong) $(epair) $(emol) $(ebond) $(eangle) $(edihed) $(eimp)" &
+    file energy.dat screen no &
+    title "# step pe ke etotal evdwl ecoul elong epair emol ebond eangle edihed eimp"
+
+fix THERMO all print ${thermo_freq} &
+    "$(step) $(time) $(temp) $(density) $(cella) $(cellb) $(cellc) $(press) $(xlo) $(xhi) $(ylo) $(yhi) $(zlo) $(zhi) $(xy) $(xz) $(yz) $(vol)" &
+    file thermo.dat screen no &
+    title "# step time temp density cella cellb cellc press xlo xhi ylo yhi zlo zhi xy xz yz vol"
+
+
+# ----------------------------
+# Initialize velocities
+# ----------------------------
+velocity        all create ${temp} ${seed} dist uniform
+
+
+# ----------------------------
+# Production simulation
+# ----------------------------
+fix NVT all nvt temp ${temp} ${temp} $(50.0*dt) tchain 4
+
+run ${nsteps}
+
+
+# ----------------------------
+# Write final structure
+# ----------------------------
+write_restart   final_structure.restart
+write_data      final_structure.data pair ij

@@ -11,5 +11,6 @@
 7. Alkali-Metals [J. Phys. Chem. B. 126, 9349 (2022)] (https://doi.org/10.1021/acs.jpcb.2c05674) 
 8. Quantum phase diagram of water [Nat. Commun. 14, 3349 (2023)] (https://doi.org/10.1038/s41467-023-38855-1)
 9. Predictability vs Interpretability of Dispersion-Corrected DFT [J. Chem. Theory Comput. 20, 49 (2024)] (https://doi.org/10.1021/acs.jctc.3c00903)
-10. Many-body interactions and DeePMD potentials for water [ChemRxiv (2024)] ()
-11. Sub-Nanometer Confinement Suppresses Autoionization of Water: [https://doi.org/10.26434/chemrxiv-2025-vtwpr](https://doi.org/10.26434/chemrxiv-2025-vtwpr)
+10. Many-body interactions and deep neural network potentials for water [J. Chem. Phys. 160, 144501 (2024)] (https://doi.org/10.1063/5.0203682)
+11. Sub-nanometer Confinement Suppresses Autoionization of Water [J. Am. Chem. Soc. 147, 25167 (2025)] (https://doi.org/10.1021/jacs.5c08273)
+12. Molecular Origins of Lithium-Ion Transport in the Anionic Metal–Organic Framework SU-102
