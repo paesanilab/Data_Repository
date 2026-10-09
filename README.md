@@ -13,4 +13,5 @@
 9. Predictability vs Interpretability of Dispersion-Corrected DFT [J. Chem. Theory Comput. 20, 49 (2024)] (https://doi.org/10.1021/acs.jctc.3c00903)
 10. Many-body interactions and deep neural network potentials for water [J. Chem. Phys. 160, 144501 (2024)] (https://doi.org/10.1063/5.0203682)
 11. Sub-nanometer Confinement Suppresses Autoionization of Water [J. Am. Chem. Soc. 147, 25167 (2025)] (https://doi.org/10.1021/jacs.5c08273)
-12. Molecular Origins of Lithium-Ion Transport in the Anionic Metal–Organic Framework SU-102
+12. Molecular Origins of Lithium-Ion Transport in the Anionic Metal–Organic Framework SU-102 (https://chemrxiv.org/doi/full/10.26434/chemrxiv.15008063/v1)
+13. Single-Ion Hydration Through the Lens of Data-Driven Many-Body Potentials ()
