@@ -1,0 +1,116 @@
+ion	mode	method	delta_frequency_cm_1
+F-	Hydrogen-bonded O-H stretch	PBE	-383
+F-	Hydrogen-bonded O-H stretch	B3LYP	-113
+F-	Hydrogen-bonded O-H stretch	PBE0-D3	-180
+F-	Hydrogen-bonded O-H stretch	ωB97X-D	53
+F-	Hydrogen-bonded O-H stretch	MB-nrg	-40
+F-	Free O-H stretch	PBE	-132
+F-	Free O-H stretch	B3LYP	-26
+F-	Free O-H stretch	PBE0-D3	35
+F-	Free O-H stretch	ωB97X-D	62
+F-	Free O-H stretch	MB-nrg	9
+Cl-	Hydrogen-bonded O-H stretch	PBE	-348
+Cl-	Hydrogen-bonded O-H stretch	B3LYP	-111
+Cl-	Hydrogen-bonded O-H stretch	PBE0-D3	-93
+Cl-	Hydrogen-bonded O-H stretch	ωB97X-D	29
+Cl-	Hydrogen-bonded O-H stretch	MB-nrg	-34
+Cl-	Free O-H stretch	PBE	-134
+Cl-	Free O-H stretch	B3LYP	-29
+Cl-	Free O-H stretch	PBE0-D3	32
+Cl-	Free O-H stretch	ωB97X-D	54
+Cl-	Free O-H stretch	MB-nrg	-7
+Br-	Hydrogen-bonded O-H stretch	PBE	-324
+Br-	Hydrogen-bonded O-H stretch	B3LYP	-105
+Br-	Hydrogen-bonded O-H stretch	PBE0-D3	-67
+Br-	Hydrogen-bonded O-H stretch	ωB97X-D	32
+Br-	Hydrogen-bonded O-H stretch	MB-nrg	2
+Br-	Free O-H stretch	PBE	-135
+Br-	Free O-H stretch	B3LYP	-30
+Br-	Free O-H stretch	PBE0-D3	31
+Br-	Free O-H stretch	ωB97X-D	51
+Br-	Free O-H stretch	MB-nrg	5
+I-	Hydrogen-bonded O-H stretch	PBE	-304
+I-	Hydrogen-bonded O-H stretch	B3LYP	-96
+I-	Hydrogen-bonded O-H stretch	PBE0-D3	-45
+I-	Hydrogen-bonded O-H stretch	ωB97X-D	38
+I-	Hydrogen-bonded O-H stretch	MB-nrg	11
+I-	Free O-H stretch	PBE	-136
+I-	Free O-H stretch	B3LYP	-29
+I-	Free O-H stretch	PBE0-D3	27
+I-	Free O-H stretch	ωB97X-D	51
+I-	Free O-H stretch	MB-nrg	-1
+Li+	Bend	PBE	-55.916899999999998
+Li+	Bend	B3LYP	-18.641500000000001
+Li+	Bend	PBE0-D3	-12.6723
+Li+	Bend	ωB97X-D	-11.668100000000001
+Li+	Bend	MB-nrg	1.5
+Li+	Symmetric stretch	PBE	-127.2289
+Li+	Symmetric stretch	B3LYP	-38.492800000000003
+Li+	Symmetric stretch	PBE0-D3	14.3079
+Li+	Symmetric stretch	ωB97X-D	53.009700000000002
+Li+	Symmetric stretch	MB-nrg	20.600000000000001
+Li+	Asymmetric stretch	PBE	-134.9991
+Li+	Asymmetric stretch	B3LYP	-47.776899999999998
+Li+	Asymmetric stretch	PBE0-D3	8.0490999999999993
+Li+	Asymmetric stretch	ωB97X-D	49.744799999999998
+Li+	Asymmetric stretch	MB-nrg	-1.53
+Na+	Bend	PBE	-55.049599999999998
+Na+	Bend	B3LYP	-17.5684
+Na+	Bend	PBE0-D3	-12.491400000000001
+Na+	Bend	ωB97X-D	-10.4343
+Na+	Bend	MB-nrg	6.6799999999999997
+Na+	Symmetric stretch	PBE	-127.5915
+Na+	Symmetric stretch	B3LYP	-35.258899999999997
+Na+	Symmetric stretch	PBE0-D3	18.774100000000001
+Na+	Symmetric stretch	ωB97X-D	57.428600000000003
+Na+	Symmetric stretch	MB-nrg	14.220000000000001
+Na+	Asymmetric stretch	PBE	-134.482
+Na+	Asymmetric stretch	B3LYP	-44.243099999999998
+Na+	Asymmetric stretch	PBE0-D3	13.3766
+Na+	Asymmetric stretch	ωB97X-D	54.470500000000001
+Na+	Asymmetric stretch	MB-nrg	5.2000000000000002
+K+	Bend	PBE	-53.693399999999997
+K+	Bend	B3LYP	-15.4338
+K+	Bend	PBE0-D3	-10.4795
+K+	Bend	ωB97X-D	-4.6287000000000003
+K+	Bend	MB-nrg	7.9199999999999999
+K+	Symmetric stretch	PBE	-107.44750000000001
+K+	Symmetric stretch	B3LYP	-13.856299999999999
+K+	Symmetric stretch	PBE0-D3	41.703400000000002
+K+	Symmetric stretch	ωB97X-D	74.169899999999998
+K+	Symmetric stretch	MB-nrg	21.059999999999999
+K+	Asymmetric stretch	PBE	-112.3312
+K+	Asymmetric stretch	B3LYP	-21.202100000000002
+K+	Asymmetric stretch	PBE0-D3	37.917400000000001
+K+	Asymmetric stretch	ωB97X-D	71.701800000000006
+K+	Asymmetric stretch	MB-nrg	14.35
+Rb+	Bend	PBE	-54.7455
+Rb+	Bend	B3LYP	-16.781099999999999
+Rb+	Bend	PBE0-D3	-12.1607
+Rb+	Bend	ωB97X-D	-9.7889999999999997
+Rb+	Bend	MB-nrg	6.0700000000000003
+Rb+	Symmetric stretch	PBE	-107.7608
+Rb+	Symmetric stretch	B3LYP	-13.592700000000001
+Rb+	Symmetric stretch	PBE0-D3	43.686900000000001
+Rb+	Symmetric stretch	ωB97X-D	76.580299999999994
+Rb+	Symmetric stretch	MB-nrg	18.170000000000002
+Rb+	Asymmetric stretch	PBE	-112.7784
+Rb+	Asymmetric stretch	B3LYP	-20.800999999999998
+Rb+	Asymmetric stretch	PBE0-D3	39.910600000000002
+Rb+	Asymmetric stretch	ωB97X-D	74.629999999999995
+Rb+	Asymmetric stretch	MB-nrg	13.33
+Cs+	Bend	PBE	-55.0351
+Cs+	Bend	B3LYP	-16.819900000000001
+Cs+	Bend	PBE0-D3	-11.656700000000001
+Cs+	Bend	ωB97X-D	-6.3593000000000002
+Cs+	Bend	MB-nrg	6.4400000000000004
+Cs+	Symmetric stretch	PBE	-105.456
+Cs+	Symmetric stretch	B3LYP	-9.7187000000000001
+Cs+	Symmetric stretch	PBE0-D3	46.290100000000002
+Cs+	Symmetric stretch	ωB97X-D	80.280500000000004
+Cs+	Symmetric stretch	MB-nrg	17.239999999999998
+Cs+	Asymmetric stretch	PBE	-110.3549
+Cs+	Asymmetric stretch	B3LYP	-17.1295
+Cs+	Asymmetric stretch	PBE0-D3	42.558300000000003
+Cs+	Asymmetric stretch	ωB97X-D	78.293899999999994
+Cs+	Asymmetric stretch	MB-nrg	11.85
