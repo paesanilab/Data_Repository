@@ -1,5 +1,3 @@
-This data was organized using AI tools.
-
 # Source data for figure plots
 
 This flat folder contains 12 numerical TSV tables. These tables contain the data necessary to plot the curves used in the manuscript figures. This repo also contains python scripts to regenerate the figure panels as PNG files.
